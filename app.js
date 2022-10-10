@@ -5,7 +5,7 @@ app.get('/', (req, res) => {
 
   const { query: { nombre } } = req;
   const paramName = nombre ? nombre : 'desconocido';
-  const msgResponse = ['<h1> Hola ', paramName, '!</h1>'].join('');
+  const msgResponse = ['<h1>Hola ', paramName, '!</h1>'].join('');
 
   res.send(msgResponse);
 
